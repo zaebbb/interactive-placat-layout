@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный плакат</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- scripts -->
+    <script src="./js/bg.js" defer></script>
+    <script src="./js/functions.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" class="logo">
+        <ul>
+            <li onmouseover="imageNow('web');openSelect('zero')" onmouseout="imageOver();closeSelect('zero')">Web-разработка</li>
+            <li onmouseover="imageNow('mobile');openSelect('one')" onmouseout="imageOver();closeSelect('one')">Mobile-разработка</li>
+            <li onmouseover="imageNow('dekstop');openSelect('two')" onmouseout="imageOver();closeSelect('two')">Desktop-разработка</li>
+            <li onmouseover="imageNow('cybersecurity');openSelect('three')" onmouseout="imageOver();closeSelect('three')">Кибербезопасность</li>
+            <li onmouseover="imageNow('neuro');openSelect('four')" onmouseout="imageOver();closeSelect('four')">Нейросети</li>
+            <li onmouseover="imageNow('smart');openSelect('five')" onmouseout="imageOver();closeSelect('five')">Smart-технологии</li>
+            <li onmouseover="imageNow('algoritm');openSelect('six')" onmouseout="imageOver();closeSelect('six')">Алгоритмы</li>
+        </ul>
+    </header>
+    <div class="icons">
+        <div class="icon zero" onmouseover="imageNow('web')" onmouseout="imageOver()">
+            <div class="titleBox">
+                <img src="./images/icons/web.png">
+                <h3>Web-разработка</h3>
+            </div>
+            <p>Веб-разработка позволяет разрабатывать современные сайты, сервисы, форумы, блоги, интернет-магазины, которыми пользуются огромное число пользователей интернета, не скачивая для этого никакие лишние программы.</p>
+        </div>
+        <div class="icon one" onmouseover="imageNow('mobile')" onmouseout="imageOver()">
+            <div class="titleBox">
+                <img src="./images/icons/mobile.png">
+                <h3>Mobile-разработка</h3>
+            </div>
+            <p>Пользуясь мобильными приложениями пользователь может забыть о необходимости наличия у себя компьютера, мобильные программы имеют те же самые функции что и у компьютера, при этом пользуясь телефоном из любой точки мира.</p>
+        </div>
+        <div class="icon two" onmouseover="imageNow('dekstop')" onmouseout="imageOver()">
+            <div class="titleBox">
+                <img src="./images/icons/desktop.png">
+                <h3>Desktop-разработка</h3>
+            </div>
+            <p>Компьютерные приложения такие как сервисы, игры, программы для редактирования (Word, Excel) всегда будут оставаться наиболее удобным способом работы только на компьютере, т.к. компьютер это мощная среда для работы многих программ</p>
+        </div>
+        <div class="icon three" onmouseover="imageNow('cybersecurity')" onmouseout="imageOver()">
+            <div class="titleBox">
+                <img src="./images/icons/cybersecurity.png">
+                <h3>Кибербезопасность</h3>
+            </div>
+            <p>Специалисты информационной безопасности ищут уязвимости в системе и находят подход к усилению защиты, разрабатывают атаки, SQL-инъекции, фальшивые узлы защиты, нахождение уязвимостей и т.д. для проверки безопасности компании.</p>
+        </div>
+        <div class="icon four" onmouseover="imageNow('neuro')" onmouseout="imageOver()">
+            <div class="titleBox">
+                <img src="./images/icons/neuro.png">
+                <h3>Нейросети</h3>
+            </div>
+            <p>Нейросети, машинное обучение, искусственный интеллект и др. предназначены для автоматизации рутинных задач и для решения задач где человеческого фактора недостаточно, а также позволяя заменить полностью человеческих фактор.</p>
+        </div>
+        <div class="icon five" onmouseover="imageNow('smart')" onmouseout="imageOver()">
+            <div class="titleBox">
+                <img src="./images/icons/smart.png">
+                <h3>Smart-технологии</h3>
+            </div>
+            <p>Технологии умного дома позволяют настраивать собственный дом по своим условиям для проживания, такие технологии разрабатываются уже на готовых платформах разрабоки с использованием нескольких языков программирования.</p>
+        </div>
+        <div class="icon six" onmouseover="imageNow('smart')" onmouseout="imageOver()">
+            <div class="titleBox">
+                <img src="./images/icons/algorithm.png">
+                <h3>Алгоритмы</h3>
+            </div>
+            <p>Алгоритмы позволяют разрабатывать задачи которые с вероятностью 100% будут повторяться в будущем, сфера алгоритмов не имеет точного предназначения, данное направление универсально для любого языка программирования.</p>
+        </div>
+    </div>
+    <img class="imageBg" src="./images/preview/web.png">
+</body>
+</html>
